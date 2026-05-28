@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "origami",
+  "description": "Search and analyze 29M+ French companies: SIRENE/RNE registry, dirigeants, annual accounts, BODACC, marques, AMF filings and PEP checks via the Origami MCP server.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Origami",
+    "url": "https://origami-entreprises.fr"
+  },
+  "homepage": "https://origami-entreprises.fr",
+  "repository": "https://github.com/gregtap/origami-mcp-plugin",
+  "license": "MIT",
+  "keywords": [
+    "france",
+    "company",
+    "siren",
+    "registry",
+    "kyc",
+    "due-diligence"
+  ],
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "Origami API key",
+      "description": "Your ori_mcp_… key. Create one at https://origami-entreprises.fr/account/api-keys/new/",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}
